@@ -1,0 +1,47 @@
+# SmokeyEmber for Omarchy 4
+# A charcoal theme with muted purple structure and restrained burnt-orange focus.
+
+mode = "dark"
+
+# Semantic UI colors
+accent = "#FF6B35"
+selection = "#332F3D"
+selection_background = "#332F3D"
+selection_foreground = "#ECEAF1"
+muted = "#8176A5"
+
+# Surfaces
+background = "#0B0B0F"
+dark_background = "#07070A"
+darker_background = "#050507"
+lighter_background = "#191820"
+surface = "#121218"
+surface_2 = "#191820"
+border = "#332F3D"
+
+# Text
+foreground = "#C8C7D0"
+dark_foreground = "#686674"
+light_foreground = "#D8D6DF"
+bright_foreground = "#ECEAF1"
+
+# ANSI and application palette
+red = "#D9572B"
+yellow = "#E89A5B"
+orange = "#FF6B35"
+green = "#7FA477"
+cyan = "#77A6A1"
+blue = "#7F8FBE"
+magenta = "#9D7CD8"
+brown = "#8C5742"
+
+bright_red = "#FF7A50"
+bright_yellow = "#FFB16E"
+bright_green = "#99B891"
+bright_cyan = "#93C1BC"
+bright_blue = "#9DACD2"
+bright_magenta = "#B89EE7"
+
+# Keep focused windows unmistakable without the visual weight of a gradient.
+hyprland_active_border = "rgba(a79abdee)"
+hyprland_inactive_border = "rgba(332f3daa)"
