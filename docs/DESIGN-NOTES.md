@@ -45,6 +45,8 @@ Only these two carousel entries currently remain:
 
 Future wallpapers should be added only with clear usage rights. The intended workflow is to adapt suitable images to the existing charcoal, grey-lavender, and restrained orange identity.
 
+A later smoke and hacker-tech wallpaper exploration was deliberately kept out of the publishable theme. Although several 4K, native-canvas, outpainted, and Real-ESRGAN variants were tested, the 5120×1440 results retained visible aliasing or reconstruction artifacts on the reference OLED display. The editable wordmark pair is therefore the quality baseline and the only wallpaper set in the repository.
+
 ## Omarchy integration decisions
 
 - `colors.toml` is the semantic source for current Omarchy integrations.
@@ -75,7 +77,7 @@ The install script never overwrites an unrelated theme directory or applies the 
 
 ## Suggested next iteration
 
-1. Add one or more properly licensed source wallpapers supplied or selected by the maintainer.
+1. Add another wallpaper only when a properly licensed source is genuinely sharp at its target 16:9 and 32:9 resolutions; do not derive a release asset from the rejected generated experiments.
 2. Capture real `desktop.png`, `launcher.png`, and `terminal-nvim.png` screenshots.
 3. Review orange emphasis across Kitty, Neovim, btop, and omarchy-shell together.
 4. Test the generated palette in Foot, Ghostty, and Alacritty before public release.
@@ -92,3 +94,5 @@ The install script never overwrites an unrelated theme directory or applies the 
 | 2026-08-14 | Added a Kitty-specific orange/lavender treatment. |
 | 2026-08-15 | Matched the wallpaper wordmark scale to a stock Omarchy reference. |
 | 2026-08-15 | Removed both orange-wordmark wallpaper experiments from the carousel. |
+| 2026-08-15 | Evaluated smoke and hacker-tech generated wallpapers through 4K export, outpainting, native-canvas conversion, and Real-ESRGAN restoration. |
+| 2026-08-15 | Rejected the generated raster experiments because aliasing remained visible at 5120×1440; retained only the clean SVG-derived wordmark pair. |
