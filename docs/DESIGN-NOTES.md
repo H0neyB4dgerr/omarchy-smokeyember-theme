@@ -23,7 +23,7 @@ Current key decisions:
 - Focused window borders use one solid grey-lavender (`#A79ABD`). The earlier purple-to-orange gradient was removed because it felt busier than Omarchy's native aesthetic.
 - Inactive borders remain quiet (`#332F3D`).
 - Orange is a functional accent, not the dominant wallpaper color.
-- Kitty makes orange visible through its cursor, active tab, bell border, and warm ANSI colors.
+- Omarchy generates every terminal configuration from the shared semantic palette.
 - The wallpaper wordmark remains muted purple on charcoal.
 - The orange-wordmark-on-purple-background experiments were removed from the project and carousel.
 
@@ -50,9 +50,9 @@ A later smoke and hacker-tech wallpaper exploration was deliberately kept out of
 ## Omarchy integration decisions
 
 - `colors.toml` is the semantic source for current Omarchy integrations.
-- `kitty.conf` is the only deliberate terminal-specific override.
-- Foot, Ghostty, Alacritty, Neovim, Helix, btop, Chromium, VS Code/Cursor, Obsidian, and omarchy-shell use Omarchy's installed templates.
+- Kitty, Foot, Ghostty, Alacritty, Neovim, Helix, btop, Chromium, VS Code/Cursor, Obsidian, and omarchy-shell use Omarchy's installed templates.
 - Separate Waybar, Walker, mako, and hyprlock files are not included because Omarchy 4 provides these surfaces through omarchy-shell/Quickshell.
+- The theme includes `unlock.png` and `preview-unlock.png` for `Style → Unlock`, but does not include `shell.lock.toml`; the desktop lock screen inherits Omarchy's generated `[lock]` section.
 - Omarchy 4 currently keeps one global background state. Automatic per-monitor wallpaper selection is therefore outside the portable theme format.
 
 ## Resume workflow
@@ -79,7 +79,7 @@ The install script never overwrites an unrelated theme directory or applies the 
 
 1. Add another wallpaper only when a properly licensed source is genuinely sharp at its target 16:9 and 32:9 resolutions; do not derive a release asset from the rejected generated experiments.
 2. Capture real `desktop.png`, `launcher.png`, and `terminal-nvim.png` screenshots.
-3. Review orange emphasis across Kitty, Neovim, btop, and omarchy-shell together.
+3. Review orange emphasis across the generated terminal themes, Neovim, btop, and omarchy-shell together.
 4. Test the generated palette in Foot, Ghostty, and Alacritty before public release.
 5. Revisit automatic per-monitor selection only if Omarchy adds per-output background state.
 
@@ -96,3 +96,6 @@ The install script never overwrites an unrelated theme directory or applies the 
 | 2026-08-15 | Removed both orange-wordmark wallpaper experiments from the carousel. |
 | 2026-08-15 | Evaluated smoke and hacker-tech generated wallpapers through 4K export, outpainting, native-canvas conversion, and Real-ESRGAN restoration. |
 | 2026-08-15 | Rejected the generated raster experiments because aliasing remained visible at 5120×1440; retained only the clean SVG-derived wordmark pair. |
+| 2026-08-30 | Refined ANSI green to grey sage and cyan to slate blue for calmer semantic separation. |
+| 2026-08-30 | Removed the Kitty override so public Git installs and local checkouts use the same generated terminal palette. |
+| 2026-08-30 | Added reproducible Plymouth Unlock artwork using the official OMARCHY wordmark. |
