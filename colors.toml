@@ -20,7 +20,7 @@ surface_2 = "#191820"
 border = "#332F3D"
 
 # Text
-foreground = "#C8C7D0"
+foreground = "#C4BFCC"
 dark_foreground = "#686674"
 light_foreground = "#D8D6DF"
 bright_foreground = "#ECEAF1"

@@ -31,7 +31,7 @@ PREVIEW_HELPER_DIR=$(mktemp -d)
 printf '#!/usr/bin/env bash\nexit 0\n' >"$PREVIEW_HELPER_DIR/imv"
 chmod 755 "$PREVIEW_HELPER_DIR/imv"
 PATH="$PREVIEW_HELPER_DIR:$PATH" \
-  omarchy-plymouth-preview '#0B0B0F' '#C8C7D0' "$UNLOCK_OUTPUT" "$PREVIEW_OUTPUT"
+  omarchy-plymouth-preview '#0B0B0F' '#C4BFCC' "$UNLOCK_OUTPUT" "$PREVIEW_OUTPUT"
 
 # ImageMagick records creation timestamps by default. Strip those ancillary
 # chunks so identical SVG and palette inputs produce byte-identical PNGs.

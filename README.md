@@ -19,7 +19,7 @@ SmokeyEmber keeps Omarchy's native spacing, layout, and component behavior intac
 | Primary background | `#0B0B0F` |
 | Surface | `#121218` |
 | Raised surface | `#191820` |
-| Pearl foreground | `#C8C7D0` |
+| Smoky pearl foreground | `#C4BFCC` |
 | Bright pearl | `#ECEAF1` |
 | Muted lavender | `#8176A5` |
 | Burnt orange | `#FF6B35` |
