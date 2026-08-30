@@ -204,8 +204,8 @@ else
   done
 fi
 
-if [[ $(tr -d '[:space:]' <"$PROJECT_DIR/icons.theme") != "Yaru-purple" ]]; then
-  printf 'Error: icons.theme must select Yaru-purple.\n' >&2
+if [[ $(tr -d '[:space:]' <"$PROJECT_DIR/icons.theme") != "Yaru-sage" ]]; then
+  printf 'Error: icons.theme must select Yaru-sage.\n' >&2
   exit 1
 fi
 

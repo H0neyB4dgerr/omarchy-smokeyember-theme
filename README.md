@@ -169,7 +169,7 @@ See [`screenshots/README.md`](./screenshots/README.md) for the capture notes.
 ```text
 .
 ├── colors.toml                  # Semantic Omarchy palette
-├── icons.theme                  # Yaru-purple icon integration
+├── icons.theme                  # Yaru-sage grey-green icon integration
 ├── unlock.png                   # Transparent Plymouth/SDDM wordmark
 ├── preview-unlock.png           # Style → Unlock selector preview
 ├── backgrounds/                 # Raster backgrounds selected by Omarchy
